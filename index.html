@@ -1,0 +1,247 @@
+<div id="insert" style="margin:0;padding:0;font-family: 'Montserrat', sans-serif;background-color:#DFEFD5">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $('.frame-close-btn').on('tap click', function(){
+      $('.guide-frame, .kit-frame, .bg-layer').fadeOut();
+      //$('html,body').css('overflow', '');
+      $('.outerwrapper').fadeIn();
+      return false;
+    });
+
+    $('.middleb').on('tap click', function(){
+      ext_url = $(this).data('url');
+      //console.log(ext_url);
+      //$('html, body').css('overflow', 'hidden');
+      $('.kit-frame iframe').attr('src', ext_url);
+      $('.kit-frame, .pos-bg-layer').fadeIn();
+      $('.outerwrapper').fadeOut();
+      //window.scrollTo(0, 0);
+      return false;
+    });
+    $('.leftb').on('tap click', function(){
+      ext_url = $(this).data('url');
+      //console.log(ext_url);
+      //$('html, body').css('overflow', 'hidden');
+      $('.guide-frame iframe').attr('src', ext_url);
+      $('.guide-frame, .pos-bg-layer').fadeIn();
+      $('.outerwrapper').fadeOut();
+      //window.scrollTo(0, 0);
+      return false;
+    });
+    $(".middleb").click(function() {
+      document.getElementById('kitid').scrollIntoView();
+      });
+$(".leftb").click(function() {
+      document.getElementById('guideid').scrollIntoView();
+      });
+    });
+  </script>
+  <style media="screen">
+    .formspawn {
+      background-color: #77C8E6;
+      border-color: white;
+      border-width: 3px;
+      border-radius: 9px;
+      height: auto;
+      color: white;
+      font-weight: 500;
+      font-size: 1.2em;
+      border-style: solid;
+      padding: 7px;
+      cursor: pointer;
+    }
+    .buttonwrapper {
+      margin:auto;
+      display:grid;
+      grid-template: 1fr / 2fr 1fr 2fr;
+      grid-gap: 1em;
+      width:auto;
+    }
+    .imagebanners {
+      display:grid;
+      grid-template: 1fr / 501fr 657fr;
+      height: 18%;
+      grid-gap: 5%;
+      min-height: 100px;
+    }
+    .bg-layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    }
+    .guide-frame .kit-frame {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    }
+    .guide-frame .kit-frame .wrap {
+    background: #282828;
+    width: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    max-width: 1280px;
+    max-height: 800px;
+    padding: 50px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    }
+    iframe {
+      max-height: 100%;
+      width: 100%;
+    }
+     .frame-close-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background: #000;
+    width: 43px;
+    height: 43px;
+    }
+    .maintitle {
+    display: block;
+    font-size: 2em !important;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height:1.5em;
+    }
+    .maintext {
+    text-align:left;
+    line-height: 28px;
+}
+    #editable-html-section .wrap {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    @media only screen and (max-device-width: 480px) {
+      .titlewrapper {
+        grid-template: 1fr 1fr / 1fr !important;
+      }
+      .recyclinglogo {
+        height: 100%;
+        width: 100%;
+        grid-column: 1 !important;
+        grid-row:1;
+      }
+      .maintitle {
+        grid-row:2;
+        text-align:center;
+      }
+      .photo {
+        float: none !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      .buttonwrapper {
+        grid-template: 1fr 1fr 1fr / 1fr;
+      }
+      .formspawn {
+        width:100%;
+        font-size: 1.2em;
+      }
+      .squasher {
+        width: 95% !important;
+      }
+    }
+
+  </style>
+  <div class="kit-frame" style="display: none;" id="kitid">
+    <div class="wrap" style="display:flex;flex-direction:column;height:100%">
+      <a href="#" class="frame-close-btn"><img src="https://cokecustomerhub.co.uk/wp-content/themes/mvp/images/icons/close-btn.svg" alt="close"></a>
+      <div style="width:100%;background-image: url('https://cokecustomerhub.co.uk/wp-content/uploads/2019/02/99899de4-c6c1-4249-8582-1ef7e211f18c.png');background-repeat: no-repeat;background-size: contain;background-position:center;grid-column:1;padding-top:12.36%"></div>
+      <div style="height:15%;background-color:white">
+        <div style="width:65%;display:block;margin:auto">
+          <br>
+          <p style="margin-block-start: 0;line-height:28px">To receive a free Community Clean-up starter kit that includes two litter-pickers, two pairs of gloves and two hi-vis vests please insert your details below*.</p>
+          <p>For any additional equipment, please order via www.HHEnvironmental.co.uk</p>
+          <br>
+        </div>
+      </div>
+      <iframe style="flex-grow:1;overflow:scroll;border:none;background-color:white;height:669px;" id="kitframe" src=""></iframe>
+    </div><!--/wrap-->
+  </div>
+  <div class="guide-frame" style="display: none;" id="guideid">
+		<div class="wrap">
+			<a href="#" class="frame-close-btn"><img src="https://cokecustomerhub.co.uk/wp-content/themes/mvp/images/icons/close-btn.svg" alt="close"></a>
+
+			<iframe style="border:none;background-color:white;height:1010px" id="guideframe" src="https://mailchi.mp/b5d1fcde4773/gbsc"></iframe>
+		</div><!--/wrap-->
+	</div>
+  <div class="bg-layer" style="display: none;"></div>
+
+<div class="outerwrapper" style="">
+<br>
+<br>
+  <div class="squasher" style="display:block;width:80%;margin:auto">
+  <div class="titlewrapper" style="display:grid;grid-template: 1fr / 4fr 1fr">
+    <h1 class="maintitle" style="grid-column:1">Join Coca-Cola and be part of the Great British Spring Clean</h1><div class="recyclinglogo" style="grid-column:2;max-width=100%;background-image: url('https://cokecustomerhub.co.uk/wp-content/uploads/2019/01/kbt_logo-green-BG.gif');background-repeat: no-repeat;background-size: contain;background-position:center;"></div>
+  </div>
+  <div class="imagebanners">
+    <div style="max-width:100%;background-image: url('https://cokecustomerhub.co.uk/wp-content/uploads/2019/01/GBSC-Logo.png');background-repeat: no-repeat;background-size: contain;background-position:center;grid-column:1;"></div>
+    <div style="max-height:100%;max-width:100%;background-image: url('https://cokecustomerhub.co.uk/wp-content/uploads/2019/01/Dates-Title.png');background-repeat: no-repeat;background-size: contain;background-position:center;grid-column:2"></div>
+  </div><br><br>
+  <p class="maintext">The Great British Spring Clean (GBSC) is a campaign run by Keep Britain Tidy with the simple aim of bringing people across the country together to clean up the litter in our towns, villages, countryside and beaches. Coca-Cola is one of the proud supporters of the GBSC 2019, helping to fund its delivery across the whole of the UK.</p><br>
+  <img class="photo" src="https://cokecustomerhub.co.uk/wp-content/uploads/2019/01/CCEP2018.jpg" alt="photo" style="float: right;padding: 0 0 12px 12px;max-width:45%;">
+  <p class="maintext">As well as mobilising our employees to be actively involved in litter clean-ups, we are encouraging our customers, suppliers and delivery partners to get involved and actively promote litter clean-ups in their local communities.</p><br>
+  <p class="maintext">We know that many of our customers are hubs of their communities and have a unique relationship with their customers.  Sustainability and recycling is high on the public agenda as is localness and caring for the communities’ that people live in. A Community Clean-up, like the Great British Spring Clean, provides an opportunity to get involved in a good cause.</p><br>
+  <h4 style="text-align:left;margin-left:0">Get Involved Today</h4>
+  <p class="maintext">To help you organise your own Community Clean-up we have a created an event guide and in-outlet poster that can be downloaded below. We also have a number of free Community Clean-up Starter Kits available below or they can be purchased via <a style="color: black" href="https://www.hhenvironmental.co.uk">www.HHEnvironmental.co.uk</a></p><br>
+  <p class="maintext">For those who tell us about their Community Clean-ups post event we’ll enter you into a free prize draw to win £1,000 for a charity or community cause of your choice. <a style="color: black" href="https://cokecustomerhub.co.uk/wp-content/uploads/2019/02/GBSCTCs.pdf" target="_blank">Click here for the full T & Cs.</a></p><br>
+  <div class="buttonwrapper">
+    <button class="leftb formspawn ga-event" onclick="window.open('https://mailchi.mp/b5d1fcde4773/gbsc','_blank')" data-event-name="button" data-event-value="Downloadable Community Clean-Up Guide & GBSC Poster" type="button" name="Download Poster" data-url:"https://mailchi.mp/b5d1fcde4773/gbsc">Downloadable Community Clean-Up Guide & GBSC Poster</button><button class="middleb formspawn ga-event" data-event-name="button" data-event-value="Clean-Up Kits" type="button" name="Clean-up Kits" data-url:"https://pub.s7.exacttarget.com/a1x4yjmfiuf">Clean-Up Kits</button><button onclick="window.open('https://www.keepbritaintidy.org/user/register/','_blank')" class="rightb formspawn ga-event" data-event-name="button" data-event-value="Register Your Community Clean-Up with the GBSC*" type="button" name="Register your Clean-Up">Register Your Community Clean-Up with the GBSC*</button>
+  </div>
+  <br>
+<p style="font-style:italic;font-size:0.6em">*data you share with Keep Britain Tidy about your Great British Spring Clean event will be shared with CCEP for reporting purposes only</p>
+<br>
+<br>
+</div>
+</div>
+<script type="text/javascript">
+  //determine which form to use for kit button
+
+  //declare url variables
+  let emailform = "https://www.emailmeform.com/builder/form/7T89k2A1Qg3n4d4?element_19=true";
+  let organicform = "https://www.emailmeform.com/builder/form/7T89k2A1Qg3n4d4";
+  let tradepressform = "https://www.emailmeform.com/builder/form/fO05eRQl6dS2c5CF2Y8";
+
+  let query = window.location.search.substring(1);
+
+  const updateURL = function(url){
+    document.getElementById('kitframe').setAttribute('src',url);
+    return true;
+  }
+
+  //main logic
+  if (query === "utm_source=web&utm_medium=web"){
+    updateURL(organicform);
+  } else if (query === "origin=email"){
+    updateURL(emailform);
+  } else {
+    updateURL(tradepressform);
+  };
+</script>
+</div>
